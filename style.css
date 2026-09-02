@@ -1,0 +1,1517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #351b0e;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    background: #351b0e;
+    padding: 15px 8%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu > a:hover {
+    color: #ff9f1c;
+}
+
+
+/* =========================
+   CARD DE SABORES NO MENU
+========================= */
+
+.menu-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* =========================
+   INÍCIO
+========================= */
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.texto h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 20px;
+    max-width: 500px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.botao {
+    display: inline-block;
+    background: #e85d04;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #ff9f1c;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    text-align: center;
+    padding: 80px 20px;
+    background: #351b0e;
+    color: white;
+}
+
+.sobre h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SABORES
+========================= */
+
+.pagina-sabores {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.pagina-sabores h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.pagina-sabores > p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.pizzas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.pizza {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.pizza:hover {
+    transform: translateY(-8px);
+}
+
+.pizza-img {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.pizza h2 {
+    margin-bottom: 10px;
+}
+
+.pizza p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.pizza strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #e85d04;
+}
+
+.pizza button {
+    border: none;
+    background: #351b0e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pizza button:hover {
+    background: #e85d04;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #351b0e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .texto h1 {
+        font-size: 40px;
+    }
+
+    .pizzas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .pizzas {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+}
+
+```css
+/* ================================
+   SOBRE NÓS - PIZZA HOUSE
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8ef;
+    color: #2b1710;
+}
+
+
+/* ================================
+   MENU
+================================ */
+
+header {
+    width: 100%;
+    background: #160b08;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 78px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #ff4b1f;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 12px 17px;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    background: #ff4b1f;
+    color: white;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.sobre-hero {
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 8, 5, 0.95) 0%,
+            rgba(20, 8, 5, 0.75) 45%,
+            rgba(20, 8, 5, 0.25) 100%
+        ),
+        url("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.sobre-texto {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 25px;
+
+    color: white;
+}
+
+.sobre-tag {
+    display: inline-block;
+
+    color: #ffb347;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.sobre-texto h1 {
+    font-size: clamp(45px, 6vw, 78px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.sobre-texto h1 strong {
+    color: #ff4b1f;
+}
+
+.sobre-texto p {
+    max-width: 580px;
+
+    font-size: 20px;
+    line-height: 1.7;
+
+    color: #eee;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   BOTÕES
+================================ */
+
+.botao {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #ff4b1f;
+    color: white;
+
+    padding: 16px 28px;
+
+    border-radius: 50px;
+
+    font-weight: 800;
+    font-size: 16px;
+
+    box-shadow: 0 10px 30px rgba(255, 75, 31, 0.3);
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-4px);
+    background: #ff632f;
+    box-shadow: 0 15px 35px rgba(255, 75, 31, 0.45);
+}
+
+
+/* ================================
+   HISTÓRIA
+================================ */
+
+.historia {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 110px 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.historia-imagem {
+    min-height: 450px;
+
+    border-radius: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4b1f,
+            #ff8c42
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 25px 60px rgba(100, 35, 10, 0.2);
+
+    transform: rotate(-2deg);
+
+    transition: 0.4s;
+}
+
+.historia-imagem:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.imagem-conteudo {
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: #fff8ef;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 120px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+    color: #ff4b1f;
+
+    font-size: 13px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+.historia-texto h2 {
+    font-size: clamp(35px, 4vw, 52px);
+    line-height: 1.1;
+
+    margin: 15px 0 25px;
+}
+
+.historia-texto h2 strong {
+    color: #ff4b1f;
+}
+
+.historia-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+
+    color: #69534c;
+
+    margin-bottom: 15px;
+}
+
+.historia-destaque {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 15px 20px;
+
+    border-radius: 15px;
+
+    background: #fff0e7;
+
+    color: #d9340d;
+
+    font-weight: 800;
+}
+
+
+/* ================================
+   VALORES
+================================ */
+
+.valores {
+    background: #1c0d09;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 100px 25px;
+}
+
+.valores h2 {
+    font-size: clamp(35px, 5vw, 55px);
+
+    margin: 15px 0;
+}
+
+.valores h2 strong {
+    color: #ff4b1f;
+}
+
+.valores-intro {
+    color: #c8bbb7;
+
+    font-size: 17px;
+
+    max-width: 600px;
+
+    margin: 0 auto 60px;
+}
+
+.valores-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.valor-card {
+    padding: 40px 30px;
+
+    background: #291510;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 25px;
+
+    transition: 0.35s;
+}
+
+.valor-card:hover {
+    transform: translateY(-10px);
+
+    background: #351b14;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.valor-icone {
+    width: 75px;
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: #ff4b1f;
+
+    font-size: 35px;
+
+    box-shadow: 0 10px 25px rgba(255, 75, 31, 0.25);
+}
+
+.valor-card h3 {
+    font-size: 23px;
+
+    margin: 25px 0 12px;
+}
+
+.valor-card p {
+    color: #c8bbb7;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ================================
+   FINAL
+================================ */
+
+.sobre-final {
+    padding: 110px 25px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #ff7040 0%,
+            #ff4b1f 45%,
+            #d92d0b 100%
+        );
+
+    color: white;
+}
+
+.final-conteudo {
+    max-width: 750px;
+    margin: auto;
+}
+
+.final-conteudo span {
+    font-size: 13px;
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+.final-conteudo h2 {
+    font-size: clamp(38px, 5vw, 60px);
+
+    margin: 18px 0;
+}
+
+.final-conteudo p {
+    font-size: 19px;
+
+    margin-bottom: 35px;
+
+    color: #fff1eb;
+}
+
+.botao-final {
+    background: white;
+    color: #d93612;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.botao-final:hover {
+    background: #fff8ef;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+footer {
+    background: #100806;
+
+    color: #a99b97;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    font-size: 14px;
+}
+
+footer strong {
+    color: white;
+}
+
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .menu a {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+    .sobre-hero {
+        min-height: 600px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .historia {
+        grid-template-columns: 1fr;
+
+        padding: 80px 20px;
+
+        gap: 50px;
+    }
+
+    .historia-imagem {
+        min-height: 350px;
+    }
+
+    .valores-container {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .sobre-final {
+        padding: 80px 20px;
+    }
+}
+
+
+```css
+/* =====================================================
+   CONTATO — PIZZA HOUSE PREMIUM
+===================================================== */
+
+
+/* HERO */
+
+.contato-hero {
+    min-height: 470px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #542315,
+            #190b07 65%
+        );
+
+    color: white;
+}
+
+
+/* brilho decorativo */
+
+.hero-brilho {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: #ff4b1f;
+
+    filter: blur(150px);
+
+    opacity: 0.15;
+
+    top: -300px;
+}
+
+
+.contato-hero-conteudo {
+    position: relative;
+
+    max-width: 800px;
+
+    padding: 40px 20px;
+}
+
+
+/* pequeno título */
+
+.mini-titulo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #ff7040;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.mini-titulo span {
+    width: 30px;
+    height: 2px;
+
+    background: #ff4b1f;
+}
+
+
+.contato-hero h1 {
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 0.98;
+
+    margin: 25px 0;
+
+    letter-spacing: -2px;
+}
+
+
+.contato-hero h1 strong {
+    color: #ff4b1f;
+}
+
+
+.contato-hero p {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #cbbdb8;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   ÁREA DOS CARDS
+===================================================== */
+
+.contatos-area {
+    padding: 90px 25px;
+
+    background: #fff8ef;
+}
+
+
+.contatos-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+}
+
+
+/* CARD */
+
+.contato-card {
+    position: relative;
+
+    padding: 40px;
+
+    min-height: 330px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    border: 1px solid #f0dfd5;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px rgba(68, 25, 10, 0.06);
+
+    transition:
+        transform 0.35s,
+        box-shadow 0.35s;
+}
+
+
+.contato-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 25px 60px rgba(68, 25, 10, 0.14);
+}
+
+
+/* círculo decorativo */
+
+.contato-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+
+    right: -120px;
+    bottom: -120px;
+
+    background: #fff1e9;
+
+    transition: 0.5s;
+}
+
+
+.contato-card:hover::after {
+    transform: scale(1.4);
+}
+
+
+/* topo */
+
+.card-topo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.icone {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4b1f,
+            #ff7040
+        );
+
+    font-size: 34px;
+
+    box-shadow:
+        0 12px 30px rgba(255, 75, 31, 0.25);
+
+    transition: 0.35s;
+}
+
+
+.contato-card:hover .icone {
+    transform: rotate(-5deg) scale(1.08);
+}
+
+
+.card-numero {
+    color: #eadbd4;
+
+    font-size: 38px;
+
+    font-weight: 900;
+}
+
+
+.card-label {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #ff4b1f;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.contato-card h2 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 8px 0 12px;
+
+    color: #29140e;
+
+    font-size: 28px;
+}
+
+
+.contato-card p {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 470px;
+
+    min-height: 55px;
+
+    color: #75615a;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* botão */
+
+.contato-botao {
+    position: relative;
+
+    z-index: 3;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    padding: 12px 19px;
+
+    border: 2px solid #ff4b1f;
+
+    border-radius: 50px;
+
+    color: #ff4b1f;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 900;
+
+    transition: 0.3s;
+}
+
+
+.contato-botao span {
+    font-size: 19px;
+
+    transition: 0.3s;
+}
+
+
+.contato-botao:hover {
+    background: #ff4b1f;
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(255, 75, 31, 0.25);
+}
+
+
+.contato-botao:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =====================================================
+   HORÁRIO
+===================================================== */
+
+.horario {
+    max-width: 1150px;
+
+    margin: 0 auto 100px;
+
+    padding: 40px 50px;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1c0d09,
+            #2b130d
+        );
+
+    color: white;
+
+    box-shadow:
+        0 25px 60px rgba(20, 8, 5, 0.2);
+}
+
+
+.horario-esquerda {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.horario-icone {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 20px;
+
+    background: #ff4b1f;
+
+    font-size: 34px;
+
+    box-shadow:
+        0 10px 30px rgba(255, 75, 31, 0.25);
+}
+
+
+.horario-label {
+    color: #ff7040;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.horario h2 {
+    margin-top: 7px;
+
+    font-size: 27px;
+}
+
+
+.horarios {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.horario-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.horario-item span {
+    color: #a99791;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.horario-item strong {
+    font-size: 17px;
+}
+
+
+.linha {
+    width: 1px;
+    height: 45px;
+
+    background: #49332c;
+}
+
+
+/* =====================================================
+   CTA FINAL
+===================================================== */
+
+.contato-final {
+    position: relative;
+
+    padding: 110px 25px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 50% 120%,
+            #ff8a58,
+            #ff4b1f 45%,
+            #d92d0b 100%
+        );
+}
+
+
+/* pizza gigante */
+
+.cta-pizza {
+    position: absolute;
+
+    font-size: 250px;
+
+    opacity: 0.08;
+
+    right: -30px;
+    bottom: -80px;
+
+    transform: rotate(-15deg);
+}
+
+
+.contato-final > div,
+.contato-final > span,
+.contato-final > h2,
+.contato-final > p,
+.contato-final > a {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.contato-final > span {
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.contato-final h2 {
+    margin: 20px 0;
+
+    font-size: clamp(45px, 6vw, 70px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+
+.contato-final p {
+    max-width: 550px;
+
+    margin: 0 auto 35px;
+
+    color: #ffe9df;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+.contato-final-botao {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 17px 28px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #df3513;
+
+    text-decoration: none;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+
+    transition: 0.35s;
+}
+
+
+.contato-final-botao:hover {
+    transform: translateY(-6px) scale(1.03);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: #100806;
+
+    color: #8f817d;
+}
+
+
+footer p {
+    color: white;
+
+    margin-bottom: 7px;
+}
+
+
+footer small {
+    color: #776965;
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .contato-hero {
+        min-height: 430px;
+    }
+
+
+    .contatos-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contato-card {
+        min-height: auto;
+
+        padding: 32px;
+    }
+
+
+    .horario {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding: 35px 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .horarios {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .linha {
+        width: 100%;
+        height: 1px;
+    }
+
+
+    .contato-final {
+        padding: 90px 20px;
+    }
+
+
+    .cta-pizza {
+        font-size: 170px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .contato-hero h1 {
+        font-size: 45px;
+    }
+
+
+    .mini-titulo {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .mini-titulo span {
+        width: 15px;
+    }
+
+
+    .contato-card {
+        padding: 27px;
+    }
+
+
+    .horario-esquerda {
+        align-items: flex-start;
+    }
+
+
+    .horario-icone {
+        width: 60px;
+        height: 60px;
+
+        font-size: 27px;
+    }
+
+
+    .horario h2 {
+        font-size: 22px;
+    }
+
+}
+```
