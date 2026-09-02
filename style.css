@@ -812,8 +812,6 @@ footer strong {
 }
 
 
-/* brilho decorativo */
-
 .hero-brilho {
     position: absolute;
 
@@ -841,7 +839,7 @@ footer strong {
 }
 
 
-/* pequeno título */
+
 
 .mini-titulo {
     display: flex;
@@ -898,9 +896,6 @@ footer strong {
 }
 
 
-/* =====================================================
-   ÁREA DOS CARDS
-===================================================== */
 
 .contatos-area {
     padding: 90px 25px;
